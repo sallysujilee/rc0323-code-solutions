@@ -115,6 +115,8 @@ function recommendMovie(genre) {
       return 'Sound of Music';
     case 'sci-fi':
       return 'Star Trek';
+    default:
+      return 'Genre not recognized. Choose between action, comedy, horror, drama, musical, or sci-fi';
   }
 }
 
