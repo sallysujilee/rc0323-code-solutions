@@ -15,5 +15,5 @@ Define a function, named `compact`, that accepts one parameter, `array`.
   Begin a loop that iterates through the `array` array.
     If the element is true, add it to the end of the `compactResult` array.
     Otherwise, do nothing
-  Return the `compactResult` array
+  Return `compactResult`
  */
