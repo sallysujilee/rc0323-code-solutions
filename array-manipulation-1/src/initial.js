@@ -6,3 +6,12 @@ function initial(array) {
   }
   return initialArray;
 }
+
+/*
+Define a function, named `initial`, that accepts one parameter `array`.
+  Declare a variable, named `initialArray`, and assign it to an empty array.
+  Begin a loop that iterates through the `array` array, where
+    If the element is true, add it to the end of the `initialArray` array.
+    Otherwise, do nothing
+  Return `initialArray`.
+*/
