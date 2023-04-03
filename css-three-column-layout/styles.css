@@ -1,0 +1,65 @@
+/* color drops:background color #1A96D9; */
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 1.5rem 0;
+  background-color: #1a96d9;
+}
+
+h1,
+h3,
+p {
+  color: white;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+form {
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+input {
+  width: 400px;
+  padding: 0.5rem;
+  border: 1px solid;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 800px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+.imgs {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.icon {
+  object-fit: contain;
+  object-position: center;
+  height: 90%;
+  width: 90%;
+}
