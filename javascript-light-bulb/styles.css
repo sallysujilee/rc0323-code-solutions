@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(33 33 37);
+}
+
+.bulb {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #444;
+  border-radius: 50%;
+}
+
+/* .button {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: red;
+  border: 2px solid red;
+} */
