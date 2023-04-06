@@ -9,14 +9,50 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: rgb(33 33 37);
+  background: rgb(17 17 17);
+}
+
+.dark-back-light {
+  background: rgb(17 17 17);
+}
+
+.dim-back-light {
+  background: #faea84;
+}
+
+.bright-back-light {
+  background: white;
 }
 
 .bulb {
   position: relative;
   width: 200px;
   height: 200px;
-  background: #444;
+  background: rgb(80 80 80);
+  border-radius: 50%;
+}
+
+.bulb-off {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: rgb(80 80 80);
+  border-radius: 50%;
+}
+
+.bulb-half-on {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: rgb(148 123 11);
+  border-radius: 50%;
+}
+
+.bulb-on {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #faea84;
   border-radius: 50%;
 }
 
