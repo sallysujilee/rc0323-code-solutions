@@ -25,7 +25,6 @@ body {
 }
 
 .bulb {
-  position: relative;
   width: 200px;
   height: 200px;
   background: rgb(80 80 80);
@@ -33,7 +32,6 @@ body {
 }
 
 .bulb-off {
-  position: relative;
   width: 200px;
   height: 200px;
   background: rgb(80 80 80);
@@ -41,7 +39,6 @@ body {
 }
 
 .bulb-half-on {
-  position: relative;
   width: 200px;
   height: 200px;
   background: rgb(148 123 11);
@@ -49,17 +46,8 @@ body {
 }
 
 .bulb-on {
-  position: relative;
   width: 200px;
   height: 200px;
   background: #faea84;
   border-radius: 50%;
 }
-
-/* .button {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  color: red;
-  border: 2px solid red;
-} */
