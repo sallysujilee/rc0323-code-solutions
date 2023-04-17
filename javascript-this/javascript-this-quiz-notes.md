@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is `this` in JavaScript?
-it's an implicit parameter
+the value of this will depend on how it's being defined or called; the context of which it is executed
 - What does it mean to say that `this` is an "implicit parameter"?
 it can be used even without being defined within the code block
 - _When_ is the value of `this` determined in a function; **call time** or **definition time**?
