@@ -1,0 +1,39 @@
+* {
+  font-family: "DM Sans", serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  flex-basis: calc(100% / 5);
+  padding: 10px;
+}
+
+/* .row {
+  flex-basis: calc(25%);
+} */
+
+img {
+  width: auto;
+  height: 400px;
+  object-fit: contain;
+}
+
+mark {
+  background-color: #fdf2e6;
+}
+
+p {
+  line-height: 40px;
+}
