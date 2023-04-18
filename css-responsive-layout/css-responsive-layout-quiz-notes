@@ -1,0 +1,48 @@
+# css-responsive-layout-quiz-notes
+
+## Quiz Questions
+
+After completing this exercise, you should be able to discuss or answer the following questions:
+
+- What is a **breakpoint** in responsive Web design?
+Specific screen widths that adapt to the device being used
+- What is the advantage of using a percentage (_e.g._ `50%`) `width` instead of a fixed (_e.g._ `px`) `width` for a "column" class in a responsive layout?
+% is flexible so it'll adapt to the browser sizing vs. pixel is fixed and becomes static
+- If you introduce CSS rules for a smaller `min-width` _after_ the styles for a larger `min-width` in your style sheet, the CSS rules for the **smaller** `min-width` will "win". Why is that?
+the C in CSS stands for cascade; therefore whatever is at the bottom will have power over anything above it
+
+ChatGPT:
+In responsive web design, breakpoints are specific screen widths where the layout of the webpage changes to better fit the dimensions of the device being used. At these points, the layout may switch from a single column to multiple columns, or from horizontal navigation to a drop-down menu, for example. Breakpoints are often defined using CSS media queries, which apply styles based on the size of the viewport or device.
+
+The advantage of using a percentage (%) width instead of a fixed (px) width for a "column" class in a responsive layout is that the percentage width allows the element to scale proportionally with the width of the viewport or parent container. This means that the column will automatically adjust its size to fit different screen sizes, making it more adaptable to different devices and screen resolutions. In contrast, using a fixed width would result in the column being the same size on all devices, which could cause layout issues on smaller screens or when viewed in different orientations.
+
+When introducing CSS rules for a smaller min-width after the styles for a larger min-width, the CSS rules for the smaller min-width will "win" because CSS is applied in a cascading manner, with later rules overriding earlier ones. When the browser encounters conflicting styles, it applies the style that comes last in the CSS file or stylesheet. Therefore, the styles for the smaller min-width will override any conflicting styles for the larger min-width. It's important to keep this in mind when writing responsive CSS, as the order in which you define your media queries can have a significant impact on how your layout behaves on different devices.
+
+## Notes
+
+All student notes should be written here.
+
+
+How to write `Code Examples` in markdown
+
+for JS:
+
+```javascript
+const data = "Howdy";
+```
+
+for HTML:
+
+```html
+<div>
+  <p>This is text content</p>
+</div>
+```
+
+for CSS:
+
+```css
+div {
+  width: 100%;
+}
+```
