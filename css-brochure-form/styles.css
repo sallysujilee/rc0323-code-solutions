@@ -1,0 +1,73 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+h1 {
+  color: #ec5d57;
+  font-family: "Brandon Grotesque";
+  font-weight: 500;
+}
+
+input {
+  margin: 0.4rem;
+}
+
+div {
+  text-indent: 6px;
+}
+
+body {
+  font-size: 11px;
+  text-align: center;
+}
+
+/* border color of input: B1B5B4 */
+
+/* selector color F3F3F3 */
+
+input,
+select {
+  border-radius: 5px;
+  width: 400px;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-color: #b1b5b4;
+  font-family: "Brandon Grotesque";
+  font-weight: normal;
+}
+
+select {
+  background-color: #f3f3f3;
+}
+
+button {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border: none;
+  background-color: #ec5d57;
+  color: white;
+}
+
+.email-label {
+  margin-right: 290px;
+  font-family: "Brandon Grotesque";
+}
+
+.name-label {
+  margin-right: 350px;
+  font-family: "Brandon Grotesque";
+}
+
+.hiring-label {
+  margin-right: 250px;
+  font-family: "Brandon Grotesque";
+}
+
+.engineering-label {
+  margin-right: 35px;
+  font-family: "Brandon Grotesque";
+}
+
+.button {
+  margin-left: 316px;
+  border-radius: 20px;
+  height: 29px;
+  font-family: "Brandon Grotesque";
+}
