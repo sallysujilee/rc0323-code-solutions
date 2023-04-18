@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <title>HTML forms</title>
+
+</head>
+
+<body>
+
+  <h1>Coding Form!</h1>
+  <form>
+
+    <!-- email -->
+    <div><label for="email">Enter your email: </label></div>
+    <input type="email" name="email" id="email" required>
+
+    <!-- why is coding cool -->
+    <div>
+      <label for="choices">Why is coding cool?</label>
+    </div>
+    <div>
+      <select name="choices" id="choices">
+        <option value="">--Select an option--</option>
+        <option value="interesting">Because it's interesting</option>
+        <option value="fun">Because it's fun</option>
+        <option value="powerful">Because it's powerful</option>
+      </select>
+    </div><br>
+
+
+    <!-- Favorite language -->
+    <div>
+      Favorite Language (choose one)
+    </div><br>
+    <div>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label>
+
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label>
+
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+    </div><br>
+
+    <!-- Sign me up checkbox -->
+    <div>
+      Would you like to sign up for more information?
+    </div><br>
+
+    <div>
+      <input type="checkbox" id="signUp" name="signUp" value="signUp">
+      <label for="signUp">Sign me up!</label>
+    </div>
+    <div>
+      <label for="comment">Comments</label>
+    </div>
+    <div>
+      <textarea id="comment" name="comment" rows="10" cols="28">
+      </textarea>
+    </div>
+    <div>
+      <button class="button" type="button">
+        Submit
+      </button>
+    </div>
+  </form>
+
+</body>
+
+</html>
