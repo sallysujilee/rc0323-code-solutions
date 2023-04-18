@@ -1,0 +1,29 @@
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: separate;
+}
+
+td {
+  text-align: left;
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: lightgray;
+}
