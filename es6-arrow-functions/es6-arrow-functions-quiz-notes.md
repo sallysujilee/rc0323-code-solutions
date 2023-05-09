@@ -11,6 +11,7 @@ If there are no curly braces, it would be parantheses, thus returning only a sin
 - When using _concise body syntax_, how do you return an object literal?
 an example to return an object literal with concise body syntax is:
 const getObject = () => ({ key1: value1, key2: value2 });
+start with parameters, use arrow functions, wrap object literal with parentheses
 - In the expression
     ```js
     foo(() => 42);
@@ -45,7 +46,7 @@ function
   - When does the arrow function's code get executed?
 executed after called by function `bar`
 - How does the value of `this` differ between standard functions and arrow functions?
-It's determined at the time of declaration and never changes
+arrow function stays constant depending on lexical scope; standard function can change depending on what the calling object is
 
 ## Notes
 
