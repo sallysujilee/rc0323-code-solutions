@@ -24,8 +24,7 @@ v2 && console.log('v2 is truthy');
 
 const config1 = v1 || 'default-value';
 const config2 = v2 || 'default-value';
-console.log(`config1 = ${JSON.stringify(config1)}`);
-console.log(`config2 = ${JSON.stringify(config2)}`);
+console.log('configs', config1, config2);
 
 /* TODO:
  * Demonstrate how to assign a "default value" to a variable only if the variable is `undefined`.
@@ -52,7 +51,7 @@ console.log('cfgs', cfg1, `'${cfg2}'`, cfg3);
 
 const tern1 = v1 ? 'truthy' : 'falsy';
 const tern2 = v2 ? 'truthy' : 'falsy';
-console.log('tern1', tern1, tern2);
+console.log('terns', tern1, tern2);
 
 /* TODO:
  * Use the shorthand for "if defined".
