@@ -5,13 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is destructuring, conceptually?
-You're able to pull specific values from arrays or properties from objects and assign them to variables in a way to read the code easier.
+It allows you to extract values from objects and arrays and assign them to variables easily.
 - What is the syntax for `Object` destructuring?
-Define a set of variables with the same names as the properties you want to pull from the object within the curly braces and then assign said object to be destructed next to the equal sign
+There's a data structure on the right side, the object variable, with the properties that need to be destructured on the left side inside of a set of curly braces.
 - What is the syntax for `Array` destructuring?
-same as object destructuring except you use square brackets and everything is written in a linear way
+Declare the variable, following by the opening brackets with the indexes of each variable separated by commas, a closing bracket, an assignment operator, and then the name of the object.
 - How can you tell the difference between destructuring and creating `Object`/`Array` literals?
-object uses curly braces and array uses square brackets
+If the curly braces/square brackets are on the right hand side of the operator, a new object/array literal is being created; whereas if it's on the left hand side, it's being destructured.
 
 ChatGPT:
 Destructuring is a feature in JavaScript that allows you to extract individual values from arrays or properties from objects and assign them to variables in a more concise and readable way.
