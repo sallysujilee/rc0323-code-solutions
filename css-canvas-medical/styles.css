@@ -46,6 +46,9 @@ header {
 
 .img-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
@@ -62,11 +65,11 @@ header {
 
 .header-image-content {
   position: absolute;
-  bottom: 23rem;
-  left: 7rem;
+  bottom: 38vw;
+  left: 10rem;
   color: white;
   font-size: 2rem;
-  width: 40%;
+  width: 100%;
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Tiempos Headline";
   font-style: normal;
@@ -76,9 +79,9 @@ header {
 .text-body-image-content {
   position: absolute;
   bottom: 10rem;
-  left: 7rem;
+  left: 10rem;
   color: white;
-  width: 42%;
+  width: 100%;
   line-height: 1.5;
 }
 
