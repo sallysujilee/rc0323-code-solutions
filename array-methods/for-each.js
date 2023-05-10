@@ -8,11 +8,6 @@ values.forEach(function (e) {
 
 console.log('Reverse order:');
 
-// for (let index = values.length - 1; index >= 0; index--) {
-//   const element = values[index];
-//   console.log(element);
-// }
-
 values.forEach((n, index) => {
   console.log(values[values.length - 1 - index]);
 });
