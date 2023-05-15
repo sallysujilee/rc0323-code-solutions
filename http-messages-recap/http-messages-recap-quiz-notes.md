@@ -15,7 +15,7 @@ HTTP method, request target, HTTP verson
 - What is on the first line of an HTTP **response** message?
 protocol version, status code, status text
 - What are HTTP headers?
-cen-insensitive string followed by a colon and a value whose structure depends upon the type of the header
+case-insensitive string followed by a colon and a value whose structure depends upon the type of the header
 - Is a body required for a valid HTTP message?
 no (some request it to update)
 
