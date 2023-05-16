@@ -5,13 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is Express useful for?
-
+logic you can apply depending on the requests on how to navigate through the site through all the response objects
 - How does Express fit into a full-stack web application?
-
+used as back-end framework
 - How do you add `express` to your package dependencies?
-
+install into command line (`npm install express`)
 - What Express application method starts the server and binds it to a network `PORT`?
-
+listen() method
 
 ## Notes
 
