@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 /**
  * A container of items.
@@ -8,25 +8,13 @@ import React, { useState } from 'react';
  * TODO: The buttons don't work!
  */
 export default function Container({ items }) {
-  const [currIndex, setCurrentIndex] = useState(0)
-
-  function handleNextClick() {
-    setCurrentIndex((currIndex + 1) % items.length)
-  }
-  function handlePrevClick() {
-    setCurrentIndex((currIndex - 1 + items.length) % items.length)
-  }
-  function handleSelect(index) {
-    setCurrentIndex(index)
-  }
-
   return (
     <div>
-      <div>{items[currIndex]}</div>
+      <div>{items[0]}</div>
       <div>
-        <CustomButton text="Prev" onCustomClick={handlePrevClick} />
-        <Indicators count={items.length} currIndex={currIndex} onSelect={handleSelect} />
-        <CustomButton text="Next" onCustomClick={handleNextClick} />
+        <CustomButton text="Prev" />
+        <Indicators count={items.length} />
+        <CustomButton text="Next" />
       </div>
     </div>
   );
@@ -40,8 +28,8 @@ export default function Container({ items }) {
  * TODO: Make the background color a prop, default white.
  * TODO: When clicked, the parent needs to be notified.
  */
-function CustomButton({ text, bgColor = 'white', onCustomClick }) {
-  return <button onClick={onCustomClick} style={{ backgroundColor: bgColor }}>{text}</button>;
+function CustomButton({ text }) {
+  return <button style={{ backgroundColor: 'white' }}>{text}</button>;
 }
 
 /**
@@ -54,12 +42,10 @@ function CustomButton({ text, bgColor = 'white', onCustomClick }) {
  *       To avoid confusion, use `onSelect` for the event prop name.
  * TODO: Highlight the active indicator lightblue.
  */
-function Indicators({ count, currIndex, onSelect }) {
+function Indicators({ count }) {
   const buttons = [];
   for (let i = 0; i < count; i++) {
-    buttons.push(<CustomButton key={i} text={i} onCustomClick={() => onSelect(i)}
-      bgColor={currIndex === i ? "lightblue" : undefined}
-    />);
+    buttons.push(<CustomButton key={i} text={i} />);
   }
   return <div>{buttons}</div>;
 }

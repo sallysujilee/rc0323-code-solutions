@@ -16,6 +16,7 @@ Chat GPT:
 
 4.Update state through callbacks: To update the shared state, define callback functions in the common ancestor component. Pass these functions down to the child components as props. When a child component needs to modify the shared state, it can call the callback function provided by the ancestor component, which will update the state accordingly.
 
+
 ## Notes
 
 All student notes should be written here.
