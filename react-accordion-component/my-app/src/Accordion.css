@@ -1,0 +1,13 @@
+.topic {
+  border: 2px solid black;
+  margin: 1px 6rem;
+  background-color: #ddd;
+  width: 20rem;
+}
+
+.topic-content {
+  border: 2px solid black;
+  margin: 1px 6rem;
+  width: 20rem;
+  font-size: small;
+}
