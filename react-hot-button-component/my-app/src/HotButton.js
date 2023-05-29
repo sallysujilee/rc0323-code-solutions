@@ -25,6 +25,6 @@ export default function HotButton() {
   }
 
   return (
-    <button onClick={handleClick} className={`hot-button` $}> Hot Button</button >
+    <button onClick={handleClick} className={`hot-button ${getTemp()}`}> Hot Button</button >
   )
 }
