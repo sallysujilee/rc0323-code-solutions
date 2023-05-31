@@ -9,8 +9,8 @@ import { ClientError, errorMiddleware } from './lib/index.js';
 const db = new pg.Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: {
-    rejectUnauthorized: false,
-  },
+    rejectUnauthorized: false
+  }
 });
 
 const app = express();
@@ -58,6 +58,15 @@ app.post('/api/auth/sign-in', async (req, res, next) => {
      *     Create a new signed token with `jwt.sign()`, using the payload and your TOKEN_SECRET
      *     Send the client a 200 response containing the payload and the token.
      */
+    const sql = `
+      select "userId".
+          "hashedPassword"
+        from "users"
+      where "username" = $1
+    `;
+    const params = [username];
+    const result = await db.query(sql, params);
+    const [user] = result.rows;
   } catch (err) {
     next(err);
   }
