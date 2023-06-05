@@ -8,14 +8,14 @@ import { ClientError, errorMiddleware } from './lib/index.js';
 const db = new pg.Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: {
-    rejectUnauthorized: false,
-  },
+    rejectUnauthorized: false
+  }
 });
 
 const app = express();
 app.use(express.json());
 
-app.post('/api/auth/sign-up', (req, res, next) => {
+app.post('/api/auth/sign-up', async (req, res, next) => {
   try {
     const { username, password } = req.body;
     if (!username || !password) {
@@ -36,9 +36,9 @@ app.post('/api/auth/sign-up', (req, res, next) => {
       returning "userId", "username", "createdAt"
       `;
 
-      const result = await db.query(sql, [username, hashedPassword]);
-      const [user] = result.rows;
-      res.status(201).json(user)
+    const result = await db.query(sql, [username, hashedPassword]);
+    const [user] = result.rows;
+    res.status(201).json(user);
 
   } catch (err) {
     next(err);
