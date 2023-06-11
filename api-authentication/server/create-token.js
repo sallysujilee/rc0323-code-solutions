@@ -5,8 +5,8 @@ const payload = {
   userId: 42,
   permissions: [
     'drink',
-    'drive',
-  ],
+    'drive'
+  ]
 };
 
 const token = jwt.sign(payload, process.env.TOKEN_SECRET);
