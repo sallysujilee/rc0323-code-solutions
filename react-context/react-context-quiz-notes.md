@@ -5,9 +5,9 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the purpose of React "context"?
-
+provide a way to share data between components without having to pass props manually at every level of the component tree
 - What values can be stored in context?
-
+can be any type of data
 - How do you create context and make it available to the components?
 
 - How do you access the context values?
