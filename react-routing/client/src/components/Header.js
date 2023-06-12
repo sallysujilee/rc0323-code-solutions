@@ -8,8 +8,12 @@ export default function Header(props) {
         <div className="navbar-collapse">
           <ul className="navbar-nav mr-auto">
             {/* TODO: Make these links to About and Catalog, with className "title" */}
-            <li className="nav-item nav-link">About</li>
-            <li className="nav-item nav-link">Catalog</li>
+            <Link to="/about">
+              <li className="nav-item nav-link">About</li>
+            </Link>
+            <Link to="/">
+              <li className="nav-item nav-link">Catalog</li>
+            </Link>
           </ul>
         </div>
       </nav>

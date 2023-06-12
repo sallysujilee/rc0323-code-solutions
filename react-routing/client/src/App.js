@@ -1,5 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import {Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Catalog from './pages/Catalog';
+import ProductDetails from './pages/ProductDetails';
+import About from './pages/About';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (

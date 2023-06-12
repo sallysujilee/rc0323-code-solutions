@@ -52,6 +52,6 @@ function Product({ product }) {
         <p className="card-text text-secondary">{toDollars(price)}</p>
         <p className="description card-text">{shortDescription}</p>
       </div>
-    </div>
+    </Link>
   );
 }
