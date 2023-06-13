@@ -7,9 +7,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What does the acronym FIFO mean?
 "First in, first out"
 - What methods are available on a Queue data structure?
-
+enqueue, dequeue, peek
 - What must you do to access the value at an arbitrary point in a queue (not just the "front")?
-
+use dequeue operations until you get to where you want to be
 
 ## Notes
 
