@@ -68,8 +68,9 @@ header {
   bottom: 38vw;
   left: 10rem;
   color: white;
-  font-size: 2rem;
+  font-size: 3.5rem;
   width: 100%;
+  padding-right: 50rem;
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Tiempos Headline";
   font-style: normal;
@@ -78,22 +79,30 @@ header {
 
 .text-body-image-content {
   position: absolute;
-  bottom: 10rem;
+  bottom: 15rem;
   left: 10rem;
-  color: white;
   width: 100%;
   line-height: 1.5;
+  color: white;
+  font-size: 1.5rem;
+  padding-right: 50rem;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  src: url("Avenir.woff2") format("woff2");
 }
 
 .img-button {
   position: absolute;
-  bottom: 6rem;
-  left: 7rem;
+  bottom: 8rem;
+  left: 10rem;
   color: white;
   border: none;
   background-color: #294465;
-  padding: 0.7rem 2rem;
+  padding: 1rem 2.3rem;
   border-radius: 3px;
+  font-size: larger;
 }
 
 .clinicians-container {
