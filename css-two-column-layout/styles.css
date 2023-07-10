@@ -1,7 +1,93 @@
 .webtitle {
-  font-size: 5rem;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .title-description {
   text-align: center;
+  font-size: larger;
+  margin: 1.5rem 21rem;
+  line-height: 2;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 4);
+}
+
+.row2 {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  padding-right: 15rem;
+}
+
+.bottom {
+  margin: 5rem 10rem;
+}
+
+.container {
+  margin: 1rem 10rem;
+}
+
+.icon {
+  padding-bottom: 9rem;
+}
+
+.icon-title {
+  font-size: 1.2rem;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 1.2rem;
+  margin-right: 10rem;
+}
+
+.software-title {
+  margin-right: 16.1rem;
+}
+
+.icon-description {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 400;
+  padding-right: 6rem;
+  padding-left: 1.2rem;
+  line-height: 2;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: none;
+  color: #d2544e;
+  border: 2px solid #d2544e;
+  font-size: medium;
+  padding: 0.7rem 3rem;
+  margin-bottom: 5rem;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 700;
 }
