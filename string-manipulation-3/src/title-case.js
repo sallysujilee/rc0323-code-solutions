@@ -1,37 +1,30 @@
 /* exported titleCase */
-function titleCase(title) {
-  const minorWords = ['a', 'an', 'the', 'and', 'but', 'or', 'nor', 'as', 'at', 'by', 'for', 'in', 'of', 'on', 'per', 'to'];
+function titleCase(str) {
+  const minorWords = [
+    'and', 'or', 'nor', 'but',
+    'a', 'an', 'the',
+    'as', 'at', 'by', 'for', 'in', 'of', 'on', 'per', 'to'
+  ];
 
-  function capitalize(word) {
-    for (let i = 0; i < word.length; i++) {
-      if (word[i].includes('javascript')) {
-        word[i] = word[i].replace('j', 'J');
-        word[i] = word[i].replace('s', 'S');
+  return str.split(': ').map((title, index) => {
+    return title.split(' ').map(function (word, index) {
+      const lowercaseWord = word.toLowerCase();
+
+      if (lowercaseWord === 'javascript') {
+        return 'JavaScript';
       }
-    }
-    return word.charAt(0).toUpperCase() + word.slice(1);
-  }
 
-  const words = title.toLowerCase().split(' ');
-
-  const titleCasedWords = words.map((word, index) => {
-    for (let i = 0; i < word.length; i++) {
-      if (word[i].includes('javascript')) {
-        word[i] = word[i].replace('j', 'J');
-        word[i] = word[i].replace('s', 'S');
+      if (lowercaseWord === 'api') {
+        return 'API';
       }
-    }
-    if (word === 'api') {
-      return 'API';
-    }
-    if (index === 0 || !minorWords.includes(word)) {
-      return capitalize(word);
-    } else {
-      return word;
-    }
-  });
 
-  const titleCased = titleCasedWords.join(' ');
+      if (minorWords.includes(lowercaseWord) && index !== 0) {
+        return word.toLowerCase();
+      }
 
-  return titleCased;
+      return word.split('-').map(function (part) {
+        return part.charAt(0).toUpperCase() + part.slice(1).toLowerCase();
+      }).join('-');
+    }).join(' ');
+  }).join(': ');
 }
